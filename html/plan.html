@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Content Type Meta tag -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!--Responsive Viewport Meta tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+	<title>GEBO-計畫</title>
+	<!-- Roboto font embed -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../css/resetplan.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/styleplan.css">
+
+	<!-- navbar -->
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/stylecalcul.css">
+
+</head>
+
+<body>
+	<!-- 導覽列 -->
+	<section id="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#"><img src="../images/logo2.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html">HOME<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							功能
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">計畫</a>
+							<a class="dropdown-item" href="#">日記</a>
+						</div>
+					</li>
+			</div>
+		</nav>
+		
+	</section>
+	<div id="todo-mainimg">
+		<img src="../images/funimg.png">
+		</src>
+	</div>
+	<div id="header-div">
+		<header>
+
+			<input type="text" placeholder="新增計畫" id="item">
+			<button id="add">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+					y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+					<g>
+						<path class="fill"
+							d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z" />
+					</g>
+				</svg>
+			</button>
+
+		</header>
+	</div>
+	<div class="container">
+		<!-- Uncompleted tasks -->
+		<ul class="todo" id="todo"></ul>
+
+		<!-- Completed tasks -->
+		<ul class="todo" id="completed"></ul>
+	</div>
+
+	<!-- JavaScripts -->
+	<script src="../js/plan.js"></script>
+
+</body>
+
+</html>
