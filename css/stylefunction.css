@@ -81,16 +81,16 @@ body {
   }
   /* 當在螢幕時RWD */
  
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     .topictitle{
       font-size: 2em;
     }
     .topimgpic{
-      width: 48.331%;
+      width: 48.331%;;
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     .topictitle{
       font-size: 1.5em;
     }

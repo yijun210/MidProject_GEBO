@@ -35,9 +35,14 @@ body{
     text-align: center;
     margin: 10px auto 0px auto;
 }
+.row{
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
 /* 上面Login Signup部分 */
 .wrapper{
-  margin: 10px auto 40px auto;
+  margin: 10px 30px 40px 30px;
   max-width: 700px;
   width: 100%;
   height: 500px;
@@ -46,14 +51,6 @@ body{
   /* 垂直置中 */
 }
 
-.wrapper .container{
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-  border-radius: 20px;
-  font-size: 20px;
-  background: #fff;
-}
 
 .wrapper .container .tabs ul{
   text-align: center;
@@ -98,6 +95,8 @@ body{
   text-align: center;
   letter-spacing: 3px;
   font-weight: bold;
+  font-size: 20px;
+  border-radius: 20px;
 }
 
 .wrapper .container  a{
@@ -129,48 +128,31 @@ button:focus {
   outline: none;
 }
 @media screen and (max-width: 480px) {
-  .wrapper .container{
-      width: 450px;
-  }
-  .wrapper .container  a{
-    font-size: 2.4rem;
-  }
-  button{
-    font-size: 7rem;
-  }
+
   .topimgpic{
     width: 38.331%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  
+
   .topimgpic{
     width: 40%;
   }
 
 }
 @media screen and (min-width: 1024px) {
-  .topictitle{
-    font-size: 2em;
-  }
+
   .topimgpic{
     width: 20%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .wrapper .container{
-    max-width: 700px;
-    width: 100%;
-    height: 500px;
-  }
-  .topictitle{
-    font-size: 2.5em;
-  }
+
 
   .topimgpic{
-    width: 10%;
+    width: 20%;
   }
 }
 
