@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>日記</title>
+  <link href="../images/icon.ico" type="img/x-ico" rel="icon">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- firebase -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400,700">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.9/css/all.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../css/styledaily.css">
+
+</head>
+
+<body>
+
+  <section id="nav-bar">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img src="../images/logo2.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../html/daily.html">日記<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse-center">
+          <li class="navbar-center">
+            <!-- 新增心情日記 -->
+            <div class="btn"><a class="nav-link" href="../html/upload.html"><i class="fas fa-plus-circle"></i></a></div>
+          </li>
+
+          <!-- 新增心情日記 -->
+          
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link logout" href="html/login.html">登出</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <!-- 內文 -->
+  <div id="div_content" class="outside">
+    <div id="post_1" class="content-post">
+      <div class="header level">
+        <div class="level-left">
+          <figure class="header-image is-32x32">
+            <img src="../images/logo.png" />
+          </figure>
+          <span class="username">GEBO</span>
+        </div>
+        <div id="del_1" class="level-right delbtn btn">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div id="edit_1" class="btn">
+          <i class="fas fa-edit btn"></i>
+        </div>
+      </div>
+
+      <figure class="image-container">
+        <img class="post-image" src="../images/img.jpg" />
+      </figure>
+      <div class="content">
+        <p class="caption"><span>2019-01-02</span>
+          <p>
+            <div id="diary_1">
+              <p class="container">今天天氣真好</p>
+              <!-- <input type="text" id="input_1" value="今天天氣真好" disabled="disabled"/> -->
+            </div>
+      </div>
+    </div>
+    <div id="post_2" class="content-post">
+      <div class="header level">
+        <div class="level-left">
+          <figure class="header-image is-32x32">
+            <img src="../images/logo.png" />
+          </figure>
+          <span class="username">GEBO</span>
+        </div>
+        <div id="del_2" class="level-right delbtn btn">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div id="edit_2" class="btn">
+          <i class="fas fa-edit btn"></i>
+        </div>
+      </div>
+
+      <figure class="image-container">
+        <img class="post-image" src="../images/img2.jpg" />
+      </figure>
+      <div class="content">
+        <p class="caption"><span>2019-01-02</span>
+          <p>
+            <div id="diary_2">
+              <p class="container">今天天氣真好</p>
+            </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vendors -->
+  <script src="../js/jquery.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+  <!-- Customized JS -->
+  <script src="../js/dairy.js"></script>
+</body>
+
+</html>

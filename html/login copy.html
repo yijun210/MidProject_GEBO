@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GEBO-login</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+  <link rel="stylesheet" href="../css/stylelogin.css">
+  <script>
+
+  </script>
+</head>
+
+<body>
+  <div class="bg">
+    <img src="../images/loginbgpic.png" width="500px" class="logo">
+  </div>
+  <div class="topimg">
+    <a href="../index.html"><img src="../images/logo.png" class="topimgpic"></a>
+  </div>
+  <div class="wrapper">
+    <div class="container">
+        <div class="tabs">
+          <ul>
+            <li class="login_li">Login</li>
+            <li class="signup_li">Signup</li>
+          </ul>
+        </div>
+        <div class="login">
+          <form action="#">
+            <div class="input_field">
+              <input type="text" placeholder="帳號" class="input" required minlength="3" maxlength="15"
+                pattern="[a-zA-Z0-9]+">
+            </div>
+            <div class="input_field">
+              <input type="password" placeholder="密碼" class="input" minlength="8" maxlength="15">
+            </div>
+            <button>登入</button>
+          </form>
+        </div>
+
+        <div class="signup">
+          <form action="#">
+            <div class="input_field">
+              <input type="text" placeholder="姓名" class="input">
+            </div>
+            <div class="input_field">
+              <input type="email" placeholder="E-mail" class="input">
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="帳號" class="input" required minlength="3" maxlength="15"
+                pattern="[a-zA-Z0-9]+">
+            </div>
+            <div class="input_field">
+              <input type="password" placeholder="Password" class="input" minlength="8" maxlength="15">
+            </div>
+            <button>註冊</button>
+            <!-- <div class="btn"><a href="#">Signup</a></div> -->
+          </form>
+        </div> 
+    </div>
+  </div>
+  <script src="../js/scriptlogin.js"></script>
+</body>
+
+</html>

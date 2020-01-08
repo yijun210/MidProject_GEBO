@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>上傳</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../images/icon.ico" type="img/x-ico" rel="icon">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- firebase -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400,700">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.9/css/all.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/styleupload.css">
+
+</head>
+
+<body>
+
+    <section id="nav-bar">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="../images/logo2.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/daily.html">日記<span class="sr-only">(current)</span></a>
+                      </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link logout" href="html/login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <div>
+
+    </div>
+
+    <div class="container">
+        <div class="top">
+            <div class="btn"><a href="../html/daily.html" ><i class="fas fa-arrow-left"></i></a></div>
+            <h1 class="upload-title">新增文章</h1>
+            <div id="add_diary" class="btn"><i class="fas fa-pen"></i></div>
+        </div>
+        
+        <div class="buttom">
+            <div>
+                <h1 class="inside-title">圖片</h1>
+                <div id="avatar-preview" class="inside-preview">
+                    <input class="inside-input" type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                    <label class="icon-input" for="imageUpload">
+                        <i class="fas fa-upload avatar-label__icon"></i>
+                    </label>
+                </div>
+                
+            </div>
+            <div>
+                <h1 class="inside-title">描述</h1>
+                <div id="avatar-upload" class="inside-upload">
+                    <textarea id="dairy" class="text-input" placeholder="寫個日記吧！"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Vendors -->
+    <script src="../js/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+    <!-- Customized JS -->
+    <script src="../js/dairy.js"></script>
+</body>
+
+</html>
